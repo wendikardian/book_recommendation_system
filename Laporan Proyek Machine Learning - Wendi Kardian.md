@@ -372,8 +372,6 @@ Hasil rekomendasi di atas menunjukkan buku dengan judul **"A Sudden Change of He
 
 Rekomendasi tersebut dihasilkan dari pemodelan dan analisis pola preferensi pengguna dengan menggunakan *collaborative filtering*. Teknik ini memanfaatkan informasi dari interaksi pengguna dengan buku-buku lain untuk menyaring dan mengidentifikasi item-item yang kemungkinan besar akan disukai oleh pengguna yang bersangkutan. Pemilihan buku rekomendasi dilakukan berdasarkan kesamaan preferensi dengan pengguna lain yang memiliki skor peringkat tinggi untuk buku yang sama atau serupa.
 
-Evaluasi *Collaborative Filtering* (CF) dilakukan dengan menggunakan metrik precision, recall, dan F1 Score. Precision mengukur seberapa banyak dari buku yang direkomendasikan oleh sistem yang benar-benar sesuai dengan preferensi pengguna. Recall mengukur sejauh mana sistem dapat mengidentifikasi dan merekomendasikan buku yang benar-benar diminati oleh pengguna dari total buku yang seharusnya direkomendasikan.
-
 ## Evaluation
 
 ### Content Based Filtering 
@@ -418,6 +416,9 @@ Grafik yang ideal mencerminkan konvergensi antara kurva train dan test, menandak
 
 -----
   #### Hasil pengujian F1 Score, Precision, dan Recall Collaborative Filtering
+
+Evaluasi *Collaborative Filtering* (CF) dilakukan dengan menggunakan metrik precision, recall, dan F1 Score. Precision mengukur seberapa banyak dari buku yang direkomendasikan oleh sistem yang benar-benar sesuai dengan preferensi pengguna. Recall mengukur sejauh mana sistem dapat mengidentifikasi dan merekomendasikan buku yang benar-benar diminati oleh pengguna dari total buku yang seharusnya direkomendasikan.
+
   
 Precision: 0.3283318623124448
 
