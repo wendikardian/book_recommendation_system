@@ -254,7 +254,8 @@ Tabel 4. Hasil *grouping* dataset
 Dataset 'preparation' dibuat dengan menghilangkan duplikat buku berdasarkan nilai ISBN dalam dataset 'books_fix', sehingga setiap buku hanya muncul sekali dalam dataset persiapan tersebut.
 
 - DataFrame 'book_new' dibuat dengan menggunakan list 'book_ISBN', 'book_title', 'book_author', dan 'book_publisher'. DataFrame tersebut kemudian diurutkan berdasarkan kolom 'author' secara menaik dan hanya menyertakan 50,000 baris pertama.
-Dengan bentuk dataset menjadi : 
+Dengan bentuk dataset menjadi :
+
 Tabel 5. Dataset final untuk *content based filtering*
 
 |        |       isbn |                                             title |                           author |              publisher |
@@ -270,6 +271,7 @@ Tabel 5. Dataset final untuk *content based filtering*
 - membuat pemetaan unik antara User-ID dalam dataset ke representasi numerik, baik dari User-ID ke indeks (encoded) maupun sebaliknya, menggunakan dictionary dalam Python.
 - membuat pemetaan unik antara ISBN buku dalam dataset ke representasi numerik, baik dari ISBN ke indeks (encoded) maupun sebaliknya, menggunakan dictionary dalam Python.
 - Menambahkan dua kolom baru, 'user' dan 'book', ke dalam DataFrame 'df', yang merupakan representasi numerik dari User-ID dan ISBN berdasarkan pemetaan yang telah dibuat sebelumnya (user_to_user_encoded dan book_to_book_encoded).
+  
 Tabel 6. Hasil pemetaan data
 
 |       | User-ID |       ISBN | Book-Rating | user |  book | rating |
@@ -320,6 +322,7 @@ Cosine similarity dengan metode TF-IDF memiliki keunggulan dalam memberikan peng
 Dalam pengujian sistem rekomendasi buku menggunakan contoh input buku **"Delta Blood" karya Barbara Ferry Johnson**, sistem menganalisis kesamaan karakteristik kontennya, khususnya pada atribut judul dan penulis. Setelah menganalisis, sistem memberikan rekomendasi berdasarkan kemiripan konten dengan buku input. Sebagai contoh, hasil rekomendasi mencakup buku-buku seperti "Homeward Winds the River," "Tara's Song," "The Heirs of Love," "Christian Acts of Kindness," dan "Living Somewhere Between Estrogen and Death," yang semuanya merupakan karya dari penulis yang sama, Barbara Ferry Johnson. Rekomendasi ini didasarkan pada kesamaan karakteristik konten, termasuk judul dan penulis, yang dianggap relevan dan dapat menarik bagi pengguna yang menyukai buku "Delta Blood." Dengan demikian, sistem dapat memberikan rekomendasi yang personal dan sesuai dengan preferensi pengguna berdasarkan analisis konten buku yang diinputkan.
 
 Berikut adalah tabel hasil rekomendasi : 
+
 Tabel 7. Contoh hasil rekomendasi 
 |   |                                       title | author                |
 |--:|--------------------------------------------:|-----------------------|
@@ -332,7 +335,7 @@ Tabel 7. Contoh hasil rekomendasi
 ### Collaborative Filtering
 
 
-Dalam pendekatan collaborative filtering, menggunakan model RecommenderNet yang merupakan model pembelajaran mesin berbasis jaringan saraf tiruan (neural network). Model ini memanfaatkan teknik embedding untuk merepresentasikan pengguna (users) dan buku (books) ke dalam ruang fitur yang kontinu. Dengan menggunakan lapisan Embedding dari TensorFlow, setiap pengguna dan buku dihubungkan dengan vektor fitur dengan ukuran yang telah ditentukan (embedding_size). Dalam arsitektur model ini, terdapat empat lapisan Embedding yang melibatkan vektor fitur untuk pengguna, bias untuk pengguna, vektor fitur untuk buku, dan bias untuk buku. Setiap vektor fitur dan bias ini diinisialisasi menggunakan metode He-normal untuk memastikan pembelajaran yang stabil. Fungsi aktivasi sigmoid digunakan untuk menghasilkan output antara 0 dan 1, yang dapat diinterpretasikan sebagai prediksi peringkat buku oleh pengguna.
+Dalam pendekatan collaborative filtering, menggunakan model deep learning berbasis jaringan saraf tiruan (neural network) menggunakan Tensorflow Keras. Model ini memanfaatkan teknik embedding untuk merepresentasikan pengguna (users) dan buku (books) ke dalam ruang fitur yang kontinu. Dengan menggunakan lapisan Embedding dari TensorFlow, setiap pengguna dan buku dihubungkan dengan vektor fitur dengan ukuran yang telah ditentukan (embedding_size). Dalam arsitektur model ini, terdapat empat lapisan Embedding yang melibatkan vektor fitur untuk pengguna, bias untuk pengguna, vektor fitur untuk buku, dan bias untuk buku. Setiap vektor fitur dan bias ini diinisialisasi menggunakan metode He-normal untuk memastikan pembelajaran yang stabil. Fungsi aktivasi sigmoid digunakan untuk menghasilkan output antara 0 dan 1, yang dapat diinterpretasikan sebagai prediksi peringkat buku oleh pengguna.
 
 Model ini memiliki dua jenis embedding: embedding untuk pengguna (`user_embedding`) dan embedding untuk buku (`book_embedding`). Embedding ini digunakan untuk merepresentasikan pengguna dan buku dalam ruang vektor dengan dimensi `embedding_size`. Proses pembelajaran dari model ini terjadi melalui pembobotan dari embedding dengan menerapkan lapisan `Embedding` dari TensorFlow. Pembobotan ini memungkinkan model untuk menggambarkan preferensi pengguna dan karakteristik item secara lebih abstrak dan relevan.
 
@@ -406,6 +409,7 @@ Dengan cara ini,  dapat mengevaluasi sistem rekomendasi buku berbasis konten unt
 ### Collaborative Filtering
 
 ![6](https://github.com/wendikardian/book_recommendation_system/assets/69452468/3f678773-adab-46b0-9a6e-7cf7e153b88d)
+
 Gambar 9. Hasil evaluasi model *neural network*
 
 Grafik evaluasi model neural network untuk *collaborative filtering* menunjukkan perbandingan antara kinerja model pada data pelatihan dan data validasi sepanjang proses pelatihan. Metrik `root_mean_squared_error` digunakan sebagai penilaian, dengan tujuan mengukur sejauh mana model mampu mereplikasi skor peringkat yang sebenarnya dari interaksi pengguna dengan item dalam dataset. Melalui grafik tersebut, dengan mengamati tren penurunan nilai metrik pada kedua kurva, mengindikasikan upaya model untuk meminimalkan kesalahan prediksi dan meningkatkan akurasi rekomendasi.
@@ -414,8 +418,11 @@ Grafik yang ideal mencerminkan konvergensi antara kurva train dan test, menandak
 
 -----
   #### Hasil pengujian F1 Score, Precision, dan Recall Collaborative Filtering
+  
 Precision: 0.3283318623124448
+
 Recall: 0.484375
+
 F1 Score: 0.39137296159915835
 
   
