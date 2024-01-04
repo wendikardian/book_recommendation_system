@@ -16,7 +16,9 @@ Di tengah perkembangan pesat teknologi informasi dan transformasi digital yang m
 
 Gambar 2. Prediksi market industri buku di US 
 
-Dalam industri *e-commerce* buku, organisasi terus berinvestasi dalam pengembangan sistem rekomendasi untuk meningkatkan personalisasi dan pengalaman pengguna. Penelitian menunjukkan bahwa implementasi sistem rekomendasi dapat meningkatkan retensi pelanggan dan penjualan. Terkait dengan pergeseran ke arah format digital, e-book dan audiobook terus mengalami pertumbuhan signifikan. Sistem rekomendasi dapat membantu pengguna menemukan konten yang sesuai dengan preferensi mereka di tengah meluasnya pasar buku digital. Industri buku semakin mengadopsi teknologi *machine learning*, termasuk *neural networks*, untuk meningkatkan akurasi rekomendasi. Hal ini mendorong perusahaan untuk mengintegrasikan solusi inovatif berbasis AI guna memenangkan persaingan pasar.
+Sumber : Grad View Research [(https://www.grandviewresearch.com/)](https://www.grandviewresearch.com/industry-analysis/books-market)
+
+Berdasarkan riset yang dilakukan oleh Grand View Research, terungkap bahwa industri buku di Amerika Serikat mengalami peningkatan signifikan, menunjukkan pertumbuhan yang positif. Dalam industri *e-commerce* buku, organisasi terus berinvestasi dalam pengembangan sistem rekomendasi untuk meningkatkan personalisasi dan pengalaman pengguna. Penelitian menunjukkan bahwa implementasi sistem rekomendasi dapat meningkatkan retensi pelanggan dan penjualan. Terkait dengan pergeseran ke arah format digital, e-book dan audiobook terus mengalami pertumbuhan signifikan. Sistem rekomendasi dapat membantu pengguna menemukan konten yang sesuai dengan preferensi mereka di tengah meluasnya pasar buku digital. Industri buku semakin mengadopsi teknologi *machine learning*, termasuk *neural networks*, untuk meningkatkan akurasi rekomendasi. Hal ini mendorong perusahaan untuk mengintegrasikan solusi inovatif berbasis AI guna memenangkan persaingan pasar.
 
 Pentingnya sistem rekomendasi buku tergambar dalam manfaatnya yang merata bagi berbagai pihak. Bagi pengguna, sistem ini memberikan kemudahan dalam menemukan buku baru yang sesuai dengan minatnya, menciptakan pengalaman yang lebih personal, dan mengoptimalkan waktu untuk pencarian. Di sisi lain, bagi penjual dan penerbit buku, sistem rekomendasi membuka peluang baru untuk meningkatkan penjualan dengan menyuguhkan rekomendasi yang cermat dan relevan. Analisis data dari preferensi pengguna juga dapat menjadi alat strategis dalam merancang pemasaran yang lebih efektif. Dengan begitu, industri buku dan *e-commerce* secara keseluruhan dapat mengalami pertumbuhan yang berkelanjutan melalui penerapan model rekomendasi yang canggih dan responsif terhadap kebutuhan pengguna.
 
@@ -32,6 +34,7 @@ Proyek ini bertujuan untuk mendukung perusahaan penerbit buku yang memiliki kata
 - Bagaimana dapat membangun model machine learning yang memahami dengan akurat preferensi pembaca untuk meningkatkan ketepatan rekomendasi buku?
 - Apa langkah-langkah konkret untuk mengoptimalkan strategi pemasaran berdasarkan analisis data terkait tren pembacaan dan preferensi konsumen?
 - Apa saja variabel dan data historis yang perlu dipertimbangkan dalam model untuk memberikan rekomendasi yang lebih personal dan relevan?
+- Bagaimana mengembangkan model rekomendasi buku dengan target RMSE kurang dari 1.0 dan presisi, recall, serta F1 Score di atas 0.8 untuk meningkatkan akurasi prediksi dan relevansi rekomendasi buku berdasarkan data pengguna, ulasan, dan kesamaan jenis buku.
 
 
 ### Goals :
@@ -39,7 +42,7 @@ Proyek ini bertujuan untuk mendukung perusahaan penerbit buku yang memiliki kata
 - Melakukan analisis mendalam terhadap tren pembacaan dan preferensi konsumen menggunakan data yang ada
 - Menciptakan pengalaman pembaca yang lebih personal dengan memanfaatkan data historis untuk merancang rekomendasi yang mempertimbangkan keunikan preferensi dan kesukaan masing-masing pengguna.
 - Mengukur *precision* dan *recall* pada tingkat interaksi pengguna dengan rekomendasi. Dengan memberikan wawasan tentang seberapa akurat model dalam meramalkan buku yang benar-benar diminati dan relevan oleh pengguna.
-- Mencapai tingkat akurasi yang tinggi pada model rekomendasi. Ini dapat diukur menggunakan metrik evaluasi seperti *Root Mean Squared Error* (RMSE) untuk membandingkan skor peringkat yang diprediksi dengan skor peringkat sebenarnya.
+- Mengembangkan model rekomendasi buku dengan tujuan mencapai tingkat akurasi tinggi, diukur dengan metrik *Root Mean Squared Error* (RMSE) kurang dari 1.0, untuk meningkatkan keakuratan prediksi peringkat buku dan relevansi rekomendasi berdasarkan data pengguna, ulasan, dan kesamaan jenis buku.
 
 ### Solution Statement
 
@@ -47,7 +50,9 @@ Proyek ini bertujuan untuk mendukung perusahaan penerbit buku yang memiliki kata
 - Melakukan analisis mendalam terhadap data historis pembacaan dan perilaku konsumen untuk mengidentifikasi tren signifikan dan pola preferensi. Dengan memanfaatkan teknik analisis statistik dan eksplorasi data, solusi ini akan memberikan wawasan yang mendalam mengenai preferensi konsumen dan membimbing perusahaan dalam merancang strategi pemasaran yang lebih cerdas dan efektif.
 - Merancang sistem rekomendasi yang mampu memanfaatkan data historis secara unik untuk setiap pengguna, mempertimbangkan preferensi dan kesukaan masing-masing
 - Meningkatkan akurasi model rekomendasi buku dengan fokus pada evaluasi tingkat interaksi pengguna, menggunakan metrik precision dan recall untuk memberikan wawasan mendalam tentang relevansi dan ketertarikan pengguna terhadap rekomendasi buku.
-- Mengukur dan meningkatkan tingkat akurasi model dengan memanfaatkan metrik Root Mean Squared Error (RMSE), sehingga model dapat memberikan rekomendasi buku dengan skor peringkat yang lebih mendekati skor sebenarnya, meningkatkan kepuasan pengguna, dan kesuksesan proyek secara keseluruhan.
+- Mencapai nilai Root Mean Squared Error (RMSE) kurang dari 1.0 dan tingkat precision serta recall minimal 0.5 untuk model rekomendasi buku, guna meningkatkan akurasi dan relevansi rekomendasi, serta kepuasan pengguna.
+
+
 
 ### Manfaat
 Adapun manfaat dari pengembangan proyek *machine learning* ini adalah sebagai berikut : 
@@ -326,7 +331,8 @@ Tabel 7. Contoh hasil rekomendasi
 
 ### Collaborative Filtering
 
-Dalam *collaborative filtering*, model berusaha memahami pola preferensi pengguna dan karakteristik item berdasarkan data historis interaksi pengguna dengan item. Pada model ini, representasi vektor embedding digunakan untuk mewakili pengguna dan item, dan interaksi direpresentasikan melalui fungsi aktivasi sigmoid.
+
+Dalam pendekatan collaborative filtering, menggunakan model RecommenderNet yang merupakan model pembelajaran mesin berbasis jaringan saraf tiruan (neural network). Model ini memanfaatkan teknik embedding untuk merepresentasikan pengguna (users) dan buku (books) ke dalam ruang fitur yang kontinu. Dengan menggunakan lapisan Embedding dari TensorFlow, setiap pengguna dan buku dihubungkan dengan vektor fitur dengan ukuran yang telah ditentukan (embedding_size). Dalam arsitektur model ini, terdapat empat lapisan Embedding yang melibatkan vektor fitur untuk pengguna, bias untuk pengguna, vektor fitur untuk buku, dan bias untuk buku. Setiap vektor fitur dan bias ini diinisialisasi menggunakan metode He-normal untuk memastikan pembelajaran yang stabil. Fungsi aktivasi sigmoid digunakan untuk menghasilkan output antara 0 dan 1, yang dapat diinterpretasikan sebagai prediksi peringkat buku oleh pengguna.
 
 Model ini memiliki dua jenis embedding: embedding untuk pengguna (`user_embedding`) dan embedding untuk buku (`book_embedding`). Embedding ini digunakan untuk merepresentasikan pengguna dan buku dalam ruang vektor dengan dimensi `embedding_size`. Proses pembelajaran dari model ini terjadi melalui pembobotan dari embedding dengan menerapkan lapisan `Embedding` dari TensorFlow. Pembobotan ini memungkinkan model untuk menggambarkan preferensi pengguna dan karakteristik item secara lebih abstrak dan relevan.
 
@@ -341,15 +347,23 @@ Showing recommendations for users : 51655
 book with high ratings from user
 A Sudden Change of Heart : Barbara Taylor Bradford
  -------------------------------- Top 10 book recommendation ----------------------------
- Tears of the Giraffe (No.1 Ladies Detective Agency) : Alexander McCall Smith 
- Queen of the Darkness (Black Jewels Trilogy) : Anne Bishop 
- The Poisonwood Bible : Barbara Kingsolver 
- Small Wonder: Essays : Barbara Kingsolver 
- Prodigal Summer : Barbara Kingsolver 
- Notes From a Small Planet : Bill Bryson 
- The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS 
- The Alienist : Caleb Carr Sister of My Heart : Chitra Banerjee Divakaruni 
- Dragonfly in Amber : DIANA GABALDON
+
+Tabel 8. Contoh hasil rekomendasi menggunakan collaborative filtering
+|         | Book Title                                       | Author                                  |
+|---------|--------------------------------------------------|-----------------------------------------|
+| High    | A Sudden Change of Heart                        | Barbara Taylor Bradford                 |
+| Rating  | Tears of the Giraffe (No.1 Ladies Detective Agency) | Alexander McCall Smith                |
+|         | Queen of the Darkness (Black Jewels Trilogy)    | Anne Bishop                             |
+|         | The Poisonwood Bible                             | Barbara Kingsolver                     |
+|         | Small Wonder: Essays                             | Barbara Kingsolver                     |
+|         | Prodigal Summer                                   | Barbara Kingsolver                     |
+|         | Notes From a Small Planet                         | Bill Bryson                             |
+|         | The Watsons Go to Birmingham - 1963 (Yearling Newbery) | CHRISTOPHER PAUL CURTIS          |
+|         | The Alienist                                      | Caleb Carr                              |
+|         | Sister of My Heart                                 | Chitra Banerjee Divakaruni             |
+|         | Dragonfly in Amber                                 | DIANA GABALDON                          |
+
+
 
 Hasil rekomendasi di atas menunjukkan buku dengan judul **"A Sudden Change of Heart" oleh Barbara Taylor Bradford** yang memiliki rating tinggi dari pengguna dengan ID 51655. Selanjutnya, ditampilkan sepuluh buku rekomendasi teratas untuk pengguna tersebut berdasarkan teknik *collaborative filtering*.
 
@@ -415,7 +429,7 @@ Di sisi lain, Collaborative Filtering (CF) memberikan nilai Precision sekitar 0.
 
 Berikut adalah tabel perbandingan metrik evaluasi antara CBF dan CF:
 
-Tabel 8. Perbandingan Hasil
+Tabel 9. Perbandingan Hasil
 | Metrik               | Content Based Filtering (CBF) | Collaborative Filtering (CF) |
 |----------------------|--------------------------------|-------------------------------|
 | Precision            | 0.8                            | 0.33                          |
