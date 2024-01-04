@@ -5,7 +5,7 @@
 Project kedua membuat sistem rekomendasi untuk memenuhi submission project dari Dicoding, dalam kelas Machine Learning Terapan. Project ini membuat model machine learning yang dapat memberikan rekomendasi berdasarkan preferensi pengguna
 
 ![enter image description here](https://api.hub.jhu.edu/factory/sites/default/files/styles/soft_crop_1300/public/2022-12/book_array2.jpg)
-
+Gambar 1. Pustaka buku
 ## Domain Proyek
 
 ### Latar Belakang 
@@ -13,7 +13,7 @@ Project kedua membuat sistem rekomendasi untuk memenuhi submission project dari 
 Di tengah perkembangan pesat teknologi informasi dan transformasi digital yang melibatkan penggunaan platform daring dan *e-commerce*, sistem rekomendasi menjadi elemen krusial dalam meningkatkan kualitas pengalaman pengguna. Pembuatan model *machine learning* untuk sistem rekomendasi buku menjadi suatu inisiatif yang strategis. Mengingat kemajuan pesat dalam produksi buku baik dalam format fisik maupun digital, pengguna seringkali dihadapkan pada tantangan besar untuk menavigasi pilihan yang sangat luas. Oleh karena itu, implementasi sistem rekomendasi buku dapat memberikan solusi cerdas dalam membantu pengguna menemukan buku yang sesuai dengan preferensi mereka, memotong hiruk-pikuk katalog yang semakin berkembang.
 
 ![enter image description here](https://www.grandviewresearch.com/static/img/research/us-books-market.png)
-Gambar 1. Prediksi market industri buku di US 
+Gambar 2. Prediksi market industri buku di US 
 
 Dalam industri *e-commerce* buku, organisasi terus berinvestasi dalam pengembangan sistem rekomendasi untuk meningkatkan personalisasi dan pengalaman pengguna. Penelitian menunjukkan bahwa implementasi sistem rekomendasi dapat meningkatkan retensi pelanggan dan penjualan. Terkait dengan pergeseran ke arah format digital, e-book dan audiobook terus mengalami pertumbuhan signifikan. Sistem rekomendasi dapat membantu pengguna menemukan konten yang sesuai dengan preferensi mereka di tengah meluasnya pasar buku digital. Industri buku semakin mengadopsi teknologi *machine learning*, termasuk *neural networks*, untuk meningkatkan akurasi rekomendasi. Hal ini mendorong perusahaan untuk mengintegrasikan solusi inovatif berbasis AI guna memenangkan persaingan pasar.
 
@@ -184,26 +184,28 @@ Berdasarkan hasil eksplorasi data pada dataset tersebut, beberapa temuan utama d
 ### Data Visualisasi
 
 - Grafik countplot di bawah memvisualisasikan distribusi rating buku dalam dataset 'ratings', memberikan gambaran tentang sebaran frekuensi rating yang diberikan oleh pengguna pada buku-buku.
-![enter image description here](https://lh3.googleusercontent.com/pw/ABLVV87gfNlJMmrL-WmlKaD6UoY-KUcyw6W7qMQJoNWgt9WoltcABkemWp-BRYr1gNcW0b3qV60Crw7YpkOXlTAKEYv3g52njfAdC_hrguSbe6tCie2uTuAuA9vy0BT7SovxhrafHN1Fmnqu80sJ61XlLUa1FulBdky7HD9Zh6GBXMXrlx2XCXLDmSmbkzzcLldusxkQV04oPb57f4N6dLu2uE520Ujk_yGarpyRtA6TjmdpDeZWVdVm2g6EHQ3LvVS8nLWJzHlRNO7smnKzIeumURrstNq3JVmuMPii2kQfPeRbW9IJQmB_TsI3bqOe0AVp4rmPNqsABfX2GUS7StblgCAKqzIJ6h6Fb6rH9dMocaNpben4v7TLjgrddH-6xukw6r6juTR86N_JeGqw-kR-FtfgxZLKpBRAZrWgCZtBgh5KxzDG1jl7b32AwdTaHeFzo1-FiBo1u-PHw8z5Z8D8GjUHsJmJ72ne7czyxuaiX6FEfUksqTAONN1IjiBXstmL3nBARJOELAf4OZ2qnsI-7GmReY8I8RwJL4zmu0dZKaKzjOIshmSlnaa_QJaKDjmgCkUWl5sb9xbSRdD5rsRUVxevwslflgaxNo-ZNd6ONSkcpk2RmnnKJkhq0YGjM0uWIc5uin2mwYI6EEQagJlhBkdcC26Ny9Hjd-3A5BMr59oVncCSgqlZ3qNgRFv-sUmksU9rhienTYr61u5xTMIdZPjPxm_ex5uhSUBt61sDtcgU3bRJNJFMzBPbjiGy3xE8mAIG5hfiVzsOJNgcqiaeA1rpxE-Z500r2MK88F5FYAGi2_z0gUPAION_qn09oFrSAD-5uXkcb5reLR4P90SQS0QTaQ9E3DYyxPDw1I1rvB49tOdyYJWHAXVQwySqXJrNrw=w1031-h547-s-no-gm?authuser=0)
-Gambar 1. Countplot distribusi rating buku
+![1](https://github.com/wendikardian/book_recommendation_system/assets/69452468/2c437798-f57b-4981-9e2d-53c5fc882933)
+Gambar 3. Countplot distribusi rating buku
 
 - Grafik batang di bawah menampilkan sepuluh penerbit teratas dengan jumlah buku terbanyak yang diterbitkan dalam dataset 'books', memberikan gambaran tentang kontribusi relatif masing-masing penerbit terhadap jumlah buku dalam dataset tersebut.
 
-![enter image description here](https://lh3.googleusercontent.com/pw/ABLVV87QkGpNkMM7wp6UaKTF-M1H0x_xZyAWfWIiLoWzVoYHejh1_pgHB3ZGnOx81-0dluUYVohezmRvjNmsfSOThOvNjtxhI-VGKn1VEjdgXCO_AAf9laTSGPu03zmmTwYzIjxLFPoEkAsZuA76v1JDmMqhazmeaKmlUecyu8oHFnMhe2Jn50I6q_LmMqPrf0OMNsuNxEmvYCyeiZhkUM9JeozF6h5Ih5AtjDGXtcMSybiD3zhDCspT5kjJ5N6XC3quGZpzqIWZhLJHa-sC5coCLovZIzx-3AhLGAyC9E2fJ51PanD7mAvAQbBHxB8Eff0C1vo5QBRB7uAiM2K-n0iLdH7lbB1mhxllE1JdjvwBx8cAZst6IN7WFtFby1jHzYJ7GyriplDsV9b8eCaMRbnkmSNmbg_6kofQXIW9toX_SOfFSCnocM3Biy4ob92eKY4BVfnHfz-w3oAjxojcpFsBdznrcHwvqzIZs2-8m1iz4FqJaGroexwujZ9Lu0UsiIixQA4VRQbc2A13wEsll_c6Qg8gq3jYwXR_EORjE-4JIi7O8gZIcJMSiZ_D0R2Crwy4g9QlAUjADNy44_lRxqc9byuaKLfirgwf2v76TwsBtlzU9xf62137hQdiQYIqfcHcgMJuRKYUA-hFYpu4rbsXndQOgoZ1sqY5lOsDFuhDy-eDxp5PcNh9ap5feGvmik3ZyVaH96-dk0pwqDvoMU32mXnNT1kRnT4aT6QMcQX0V8gQ8Rr1LCgXf9gaTtDxxlqz4xQGn051xm0PV1eSYcvP60AcvR1kbzU-EaK-zg_aKy63NZLw2muARxKDtVa68t8b8EdNEToYd1pmm0d8UfrsbxvPG0TBE_TO7l3eHXP8YFQqUZbe2xp8uUErFnOcXJKfXQ=w1153-h547-s-no-gm?authuser=0)
-Gambar 2. Grafik batang publisher dengan banyak buku diterbitkan
+![2](https://github.com/wendikardian/book_recommendation_system/assets/69452468/bbb0d453-fc4b-45e8-ae4a-c43f47cd13cf)
+Gambar 4. Grafik batang publisher dengan banyak buku diterbitkan
 
 - Grafik batang di bawah menampilkan sepuluh penulis teratas dengan jumlah buku terbanyak yang diterbitkan dalam dataset 'books', memberikan gambaran tentang kontribusi relatif masing-masing penulis terhadap jumlah buku dalam dataset tersebut.
 
-![enter image description here](https://lh3.googleusercontent.com/pw/ABLVV85ybFBReyuXMn48VuAphbDhJrOraH30CI81gxRoATeO-N9Y9J31BU0yRUXRGJwSMLG8rsUktXY5EMX-nhO5SNa6AkgSLFU0w-86QfXx8mcVEWbRlSZnSXdh89cLWSwTJxbwTNc9zaFt5khOVDAMZBY1cx1GUToDq4jHfecSOOlDAw-bj7H4Zbv3R15GSLZzYGO4PNZsKP3azCDo2eX1xrW2e1DTsNZrH__iPJ3nnMCKGKxCqFQ6wCs0RfH55dwDhN3fJS_PeCy7-Bpzbjq4Zi-RptlQ86nI9ZPkGsZ9T255DTu52iQdrZFUbAaMB4alFcm8LofxseSir2Q5vs6qkCPlRdAsAWiMjFKKkpM4A08BByC0RMfXON5al9tKbpyUCmzDdG65HR6MU_Hw5NSTg0yS0ur-53wvd0T2ItgMTE4A9YvatJoTu7irq5mkztFltfqvtPPU_4BiYFMRK_wtx2BbGLAb3-TjgNgS_t4wUROEhKRKskAcup4MX0HH_Webf9qi6Dw0YTTGlMqVDeb1j04dwBVMZTX1mr7_THmodOpuQdPeq8-PKDRDk7W7jTjjYQE_Rnbqfvf9zaoiVh3Atmb8GpH-WxfTTliBq2PgTuuRdg38R6jy3Yydr9lMVi1Ayzo2WMzzzt8eJbWt5s6fswVKDbEx_vTzoYIkwwKPOZ-yjac9FIIkxMtZcoW4SXjwzPuRWjiiUj_BztG61yKNk9YK0WxdTRvcm7o0xPF4vDlSoJbTbq9PoeOjjJKdNrdHRFnT3MWo9fElqs7lu3Lc9-L2pNLe5QmtVJHEPYKvQXUcVnZL1wPYFSEEy96UaNpxtX9MICmwCMMSv1Meft723q8yR5F4RpsmLNxW1JBLaBV1lO0pvpn7LdRZcTrKbifgmw=w1124-h547-s-no-gm?authuser=0)
-Gambar 3. Grafik batang penulis dengan buku terbanyak
+![3](https://github.com/wendikardian/book_recommendation_system/assets/69452468/0c956bb2-7cc2-4330-8070-11356b43c000)
+Gambar 5. Grafik batang penulis dengan buku terbanyak
 
 - Grafik batang di bawah menampilkan sepuluh pengguna teratas dengan jumlah rating terbanyak yang diberikan dalam dataset 'ratings', memberikan gambaran tentang kontribusi relatif masing-masing pengguna terhadap jumlah rating dalam dataset tersebut.
-![enter image description here](https://lh3.googleusercontent.com/pw/ABLVV86yXOu3OKAEW4H-teMPH6H6gqq3DIjEli7GQpDlx7waIOKyJ5uKjI9vNZsHa4CO_wzWko2AqvxCzvth-2OHyH1a8AhAJokceIsNWGaPpFcvn906YYZsBZkPDfkWbLslsGXgJF2KJu6Dn_7d3O3Mt1Z_JPkTzOJO4cVWN5bBzX-4Cf_Tv4RZlmtQDh-U6AULiXEqO1o6bXHwqZASUpUpoHaKiG5t4jPijlQR2L5V3EP1LABGAE23l-jgOlV0zpatmbfJpYK64JWM9uOGHqG6IgBOo_H01ovz2pgHFs4LhNod2TTSSQUhd96Bi52Bwah-m0Yt-C9iA5UGYsT5xfSgjTBRnuZeakw62_xxbict6Zg7mFCym1r-u3_CFOISg_6GjkaBmCp5yUJp4uao7LLRLoA2pIsS5hmPRUoZfJZ46tb08mHtI0_4GdFU9YA98UxrErC_XWbQG6LTg5_h1l61xLJoTXSPtkCsPRdpGUIjwXncF9XlK7-ZIbAjCyVOij7kIrdz6Sn7VUm0KrzOfZxYsfgCgcvrCqaO5DapSHxMR3J7afzZgQy6qXcugyueEdlXR9RMUnm_9Vvha-YJTSLDyDkpMQNIRXyWNkYwp36TWerlpHmtIIstWjEsca4G2jzFMKiLRPFjMDuPot6Dym4RVTziv14U4RoITjhk8yIDwMMrWUPEsLRxn9fBRvOUo2svChztz-mwyXAiTFs7xJ1sGPHDd59G4CFJ617AlbBPPquOrlog5sUCNEg6K6sSuVpAlE9Vpe1h_UaJCjf7XKeyIqqSyG6j-e6JtPQt19WzcUc8l4nb3DE9CGMplxRpsw1ybQyH7lhAhWAywx5JIatbAa_BNhpUE4HsJMfK4n0BEjSp6Lte_Thpwpn-h_Ht-Lm2Xw=w1023-h547-s-no-gm?authuser=0)
-Gambar 4. sepuluh pengguna teratas dengan jumlah rating terbanyak
+
+![4](https://github.com/wendikardian/book_recommendation_system/assets/69452468/b1036b06-af8c-49b2-aa75-688935e3940a)
+Gambar 6. sepuluh pengguna teratas dengan jumlah rating terbanyak
 
 - Grafik batang di bawah menampilkan sepuluh buku teratas dengan jumlah rating terbanyak dalam dataset, memberikan gambaran tentang popularitas relatif masing-masing buku berdasarkan jumlah rating yang diberikan oleh pengguna.
-![enter image description here](https://lh3.googleusercontent.com/pw/ABLVV85P4JuyWrwrvLuIMEKbUkPf_9ufbAo8tTUXQk4IweBziC7yuhbf9lTYuTM5SxT_fvOGjSoBwWpgdHHbkimYo7dcXt-oMK8fblAhiC-kC4mgoghVvXcF3LHIwG4f2YsxDORUpINXRCyaHL4ne9sdv6QwY0HNlW-iITEc_Ybf5Tf9qSj1Fo_p1h51S8vMP2_CjdaH2_tBKCvEoeLBgxCUZ43GzGOm54CIWS5PBYOTQ7J04jjWmbW45fh5YaAxEAErOeWdgZslZm7n2MDyfuloNz_ry8eRXWjE1RklpdT3f8dRzrqIjSFTr6zKTP5HT7mVfH3HOYxnpOcgnYh-LOyhJsch1SX5OtsJuwpmqXmQ2bXn-R_uAsQRdUqU3kh4EakJwPEQGb_szgzIW5x9dAkJoQFJsPALWYVOsIy22jOLcZuCSSwnqJbmFVHUVlhoLuJdIy38QXU4UZTjvPiM2ebe74Iap6IKXIlDGvkIU82PN6Ea_EPVOGHlCy404XJm2jEA1UbaGeHWGVQAMnEefMwh-QSCzIuyD2feB20ZEyLQbcF4_X7VyMdBLjapvhQByf9jKFMqU-05OqQw3UvtvH64TH-BOhNdHXu76JihCJnuAT0Baq8jsKQZNhOVWdyMkdNdfRoN9VDX0xBaaa4uH3z4s5OR5KjGP3RbmAVsLdZ0hqD6IywpSHkOEc4bIqTfpt_fAdCCzqrxe3XijkjoqbE4ni6caIdNysB_9zqbV_6-EXWOPI2LuNUVMIuaHk08B8ptKsT-cCeKDqQt90lmC2vd_Tez_eyKMikaD9IRzvwJqSqumTAhwC1omB_3XwwWKFP2a5l7ywW3Zj1RETjXt08VlyaxlVrYXc9NPCYJtXV2xC6v-2JZMVZli6eGiIw1Z09a_A=w1341-h547-s-no-gm?authuser=0)
-Gambar 5. Sepuluh buku teratas dengan jumlah rating terbanyak 
+
+![5](https://github.com/wendikardian/book_recommendation_system/assets/69452468/2ee6e49c-c684-465b-94ef-8cbf3ecaeff0)
+Gambar 7. Sepuluh buku teratas dengan jumlah rating terbanyak 
 
 ## Data Preparation
 
@@ -301,7 +303,7 @@ Content-based filtering dengan TF-IDF dapat diimplementasikan menggunakan berbag
 Dalam content-based filtering dengan menggunakan metode Term Frequency-Inverse Document Frequency (TF-IDF), setiap item dan pengguna direpresentasikan sebagai vektor TF-IDF. Vektor ini mencerminkan bobot kata-kata atau istilah yang signifikan dalam setiap dokumen atau preferensi pengguna. Selanjutnya, untuk menilai kesamaan antara pengguna dan setiap item, digunakan metode cosine similarity.
 
 ![sik](https://miro.medium.com/v2/resize:fit:1400/1*LfW66-WsYkFqWc4XYJbEJg.png)
-Gambar 7. Formula *cosine similarity*
+Gambar 8. Formula *cosine similarity*
 
  Proses perhitungan cosine similarity memungkinkan pengukuran sejauh mana dua vektor mirip, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan ketidaksamaan yang sempurna. Dengan menghitung cosine similarity antara vektor representasi pengguna dan vektor representasi setiap item, sistem rekomendasi dapat merangkum item yang paling sesuai dengan preferensi pengguna. Item kemudian diurutkan berdasarkan nilai cosine similarity, dan yang memiliki nilai tertinggi direkomendasikan kepada pengguna sebagai pilihan yang paling relevan. Melalui pendekatan ini, content-based filtering dengan TF-IDF dan cosine similarity memberikan solusi rekomendasi yang lebih personal dan dapat disesuaikan berdasarkan karakteristik konten dan sejarah preferensi pengguna.
 
@@ -388,8 +390,8 @@ Dengan cara ini,  dapat mengevaluasi sistem rekomendasi buku berbasis konten unt
 
 ### Collaborative Filtering
 
-![enter image description here](https://lh3.googleusercontent.com/pw/ABLVV84wj64U5JTYlmEq_5PxPb2YFjf8z6XIpIyRmuZxv95jIS8Lk3v_o0PQKmAxzSF3wt3sYKWD3vDfv8fq40x9IVA57ilKYvZdT0R4Ihehp5ZP_YSP5jsYmmIPbrO4jbph1sy3viNQq1zt4OwHqU3_L3lV8qAb5ELcJRK8KuaxKMmfTlglF1gWSijM3-Tg1ohKlhHPodH6K2YlOy6myTbJS6ZiAR1pWL0FgaD9h2V36JVJrPTkTPMRoNoVZKsfmvidfeizSYgGnjy3-ZJHeR_HhC8-xxOXTRLJnbTVm2NmgjgY6DPZ-nXBhu5mrDmxCzIiguX39vDP-GJX1xCeii_RhwJ9X6SbIQvgvpB49N-GyA4IOpKhHBmDrfPbO-oJ-LactQCpHSPacFMArAG4ln05EFxktw42s9z_7bqYtSugR255XE_PEIFawc_6-JmwcJIy2nOPtdF3yvAgOYq5G1vf6E4RbuglXljY3kCSskO1XoVc5Q_oM13CIh6jFjXZ7XRqnyhJerln6LaUEiAkMrbCj8alTiim8KZCSa01JgqqpjXvp8JN0Cyd4Ba38exOI2nMHfHPoSZIlFc7f49veksQJU7Q84K4WHe3G9Jo1cEW7_gn141oTS_kdMeLODkN1EGxRYfZpSq2kssUKowFOELDpnAtWhyYRnGMo9Cvi86FIZB4GjEHNLkMavhUZlRDzg366oASOPN-0MaUPYGY2_fJktp2kWbTVOr_VXSG0N3DE3HOo1UJOY4v_xGcNGYUUpsJmRqSxQFIxP6dOb45R6dXfq4I_XLQ10ElyLCFrCzoPsuwWGYqWoeLcC8wF6hmOS0CUqfTkIInk7RzITKDZMxvJqpwv8HWlfuhtL29dmH9UgJ4wMcaJP29T_RvO4O6gMrI-A=w576-h455-s-no-gm?authuser=0)
-Gambar 8. Hasil evaluasi model *neural network*
+![6](https://github.com/wendikardian/book_recommendation_system/assets/69452468/3f678773-adab-46b0-9a6e-7cf7e153b88d)
+Gambar 9. Hasil evaluasi model *neural network*
 
 Grafik evaluasi model neural network untuk *collaborative filtering* menunjukkan perbandingan antara kinerja model pada data pelatihan dan data validasi sepanjang proses pelatihan. Metrik `root_mean_squared_error` digunakan sebagai penilaian, dengan tujuan mengukur sejauh mana model mampu mereplikasi skor peringkat yang sebenarnya dari interaksi pengguna dengan item dalam dataset. Melalui grafik tersebut, dengan mengamati tren penurunan nilai metrik pada kedua kurva, mengindikasikan upaya model untuk meminimalkan kesalahan prediksi dan meningkatkan akurasi rekomendasi.
 
