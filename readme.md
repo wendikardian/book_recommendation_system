@@ -2,7 +2,6 @@
 
 **Dibuat oleh : Wendi Kardian**
 
-Project kedua membuat sistem rekomendasi untuk memenuhi submission project dari Dicoding, dalam kelas Machine Learning Terapan. Project ini membuat model machine learning yang dapat memberikan rekomendasi berdasarkan preferensi pengguna
 
 ![enter image description here](https://api.hub.jhu.edu/factory/sites/default/files/styles/soft_crop_1300/public/2022-12/book_array2.jpg)
 Gambar 1. Pustaka buku
